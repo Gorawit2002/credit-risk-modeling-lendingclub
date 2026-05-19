@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-05-19T13:46:46.297960",
+  "random_state": 42,
+  "train_size": 1125953,
+  "test_size": 240864,
+  "n_features": 138,
+  "train_bad_rate": 0.20142759067207958,
+  "test_bad_rate": 0.26267105088348613,
+  "split_method": "time-based (train: year<=2016, test: year>2016)",
+  "models": {
+    "logistic_regression": {
+      "algorithm": "LogisticRegression (saga solver)",
+      "class_weight": "balanced",
+      "train_auc": 0.7256508127659046,
+      "test_auc": 0.7018427074182403,
+      "gini": 0.40368541483648057,
+      "ks": 0.29622668529111573,
+      "converged": false
+    },
+    "lightgbm": {
+      "algorithm": "LGBMClassifier",
+      "n_estimators": 997,
+      "learning_rate": 0.03,
+      "num_leaves": 31,
+      "train_auc": 0.7518993678983565,
+      "test_auc": 0.7228886675558552,
+      "gini": 0.44577733511171047,
+      "ks": 0.32477838485691535
+    }
+  },
+  "lgd_model": {
+    "algorithm": "LGBMRegressor",
+    "objective": "regression_l1 (MAE)",
+    "mae": 0.1469,
+    "rmse": 0.1902,
+    "r2": 0.2259
+  },
+  "portfolio_summary": {
+    "total_ead": 3517750000.0,
+    "predicted_ecl": 584919943.7821602,
+    "actual_loss": 653717705.6728574,
+    "optimal_cutoff": 0.34,
+    "optimal_approval_rate": 0.7619361963597715,
+    "optimal_net_profit": 142940853.5831058,
+    "baseline_net_profit": 69743675.44714265,
+    "profit_improvement_pct": 104.95170732927295
+  }
+}

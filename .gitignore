@@ -1,0 +1,39 @@
+
+# Data files 
+
+data/raw/
+data/interim/
+data/processed/
+
+# Large parquet files (X_train, X_test exceed Git's 100MB limit)
+**/X_train.parquet
+**/X_test.parquet
+**/portfolio_ecl.parquet
+
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.egg-info/
+venv/
+env/
+.venv/
+.env
+
+# OS / Editor
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================
+# Notebook outputs (keep notebooks but consider 
+# stripping outputs for cleaner diffs)
+# ============================================
+# Uncomment if you want clean diffs:
+# *.ipynb_checkpoints/
